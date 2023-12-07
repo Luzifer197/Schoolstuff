@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.6/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.15.6/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.15.6/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+                const markmap = getMarkmap();
+                window.mm = markmap.Markmap.create(
+                  "svg#mindmap",
+                  (getOptions || markmap.deriveOptions)(jsonOptions),
+                  root2
+                );
+              })(() => window.markmap,null,{"type":"heading","depth":0,"payload":{"lines":[0,1]},"content":"Projektmanagement","children":[{"type":"heading","depth":1,"payload":{"lines":[1,2]},"content":"Was ist ein Projekt?","children":[{"type":"heading","depth":2,"payload":{"lines":[2,3]},"content":"Einmaligkeit/Neuartigkeit/Komplexität","children":[]},{"type":"heading","depth":2,"payload":{"lines":[3,4]},"content":"Zeitlich begrenzung","children":[]},{"type":"heading","depth":2,"payload":{"lines":[4,5]},"content":"Begrenzte Ressourcehn (Kosten, Material, Mitarbeiter)","children":[]},{"type":"heading","depth":2,"payload":{"lines":[5,6]},"content":"Interdiziplinares Projektteam","children":[]},{"type":"heading","depth":2,"payload":{"lines":[6,7]},"content":"eindeutige Zieldefinition","children":[]},{"type":"heading","depth":2,"payload":{"lines":[7,8]},"content":"Beispiel für Projekt: &quot;Betriebssystem auf 50 Rechner einrichten, Bau eines Neuen Schlulgebäude, SMV plant Schulfest&quot;","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[9,10]},"content":"Projekte werden unter diese Kategorien unterschieden:","children":[{"type":"heading","depth":2,"payload":{"lines":[10,11]},"content":"Geografie","children":[]},{"type":"heading","depth":2,"payload":{"lines":[11,12]},"content":"Projektgegenstand","children":[]},{"type":"heading","depth":2,"payload":{"lines":[12,13]},"content":"Vorgehensmodell","children":[]},{"type":"heading","depth":2,"payload":{"lines":[13,14]},"content":"Auftraggeber","children":[]},{"type":"heading","depth":2,"payload":{"lines":[14,15]},"content":"Innovationsgrad","children":[]},{"type":"heading","depth":2,"payload":{"lines":[15,16]},"content":"Grö0e","children":[]}]},{"type":"heading","depth":1,"payload":{"lines":[17,18]},"content":"Phasen:","children":[{"type":"heading","depth":2,"payload":{"lines":[18,19]},"content":"Projektdefinition/Projektvorbereitung","children":[{"type":"heading","depth":3,"payload":{"lines":[19,20]},"content":"Problemanalyse","children":[]},{"type":"heading","depth":3,"payload":{"lines":[20,21]},"content":"Entscheidung zur Projektdurchführung","children":[]},{"type":"heading","depth":3,"payload":{"lines":[21,22]},"content":"Klärung der Projektziele","children":[]},{"type":"heading","depth":3,"payload":{"lines":[22,23]},"content":"Projektauftrag","children":[]},{"type":"heading","depth":3,"payload":{"lines":[23,24]},"content":"Lastenheft und Pflichtenheft","children":[]},{"type":"heading","depth":3,"payload":{"lines":[24,25]},"content":"Projektorganisation","children":[]},{"type":"heading","depth":3,"payload":{"lines":[25,26]},"content":"Kick-off-Meeting","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[27,28]},"content":"Projektplanung","children":[{"type":"heading","depth":3,"payload":{"lines":[28,29]},"content":"Identifikation von Arbeitspakete","children":[]},{"type":"heading","depth":3,"payload":{"lines":[29,30]},"content":"Projektstrukturplan (PSP)","children":[]},{"type":"heading","depth":3,"payload":{"lines":[30,31]},"content":"Projektablaufplan","children":[]},{"type":"heading","depth":3,"payload":{"lines":[31,32]},"content":"Kapazitätsplan/Ressourcenplan","children":[]},{"type":"heading","depth":3,"payload":{"lines":[32,33]},"content":"Kostenplan","children":[]},{"type":"heading","depth":3,"payload":{"lines":[33,34]},"content":"Qualitätsplan","children":[]},{"type":"heading","depth":3,"payload":{"lines":[34,35]},"content":"Risikoplan","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[36,37]},"content":"Projektdurchführung","children":[{"type":"heading","depth":3,"payload":{"lines":[37,38]},"content":"Umsetzung udn Anpassung der Projektpläne","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[39,40]},"content":"Projektabschluss","children":[{"type":"heading","depth":3,"payload":{"lines":[40,41]},"content":"Abnahme","children":[]},{"type":"heading","depth":3,"payload":{"lines":[41,42]},"content":"Präsentation","children":[]},{"type":"heading","depth":3,"payload":{"lines":[42,43]},"content":"Einführung in des Projektergebnis","children":[]},{"type":"heading","depth":3,"payload":{"lines":[43,44]},"content":"Abschlussbericht","children":[]},{"type":"heading","depth":3,"payload":{"lines":[44,45]},"content":"Abschlussbesprechung","children":[]}]}]},{"type":"heading","depth":1,"payload":{"lines":[46,47]},"content":"Definition von &quot;Ziel&quot; bei Projekte","children":[{"type":"heading","depth":2,"payload":{"lines":[47,48]},"content":"Einziel ist der gedanklich vorweggenommene zukünftige Zustand, der bewust ausgewählt wird oder durch aktives Handeln erreicht wird","children":[]},{"type":"heading","depth":2,"payload":{"lines":[48,49]},"content":"Projektziele sind nach &quot;SMART&quot; richtig formuliert","children":[{"type":"heading","depth":3,"payload":{"lines":[49,50]},"content":"S = Spezifisch: das Ziel muss verständlich und eindeutig formuliert sien","children":[]},{"type":"heading","depth":3,"payload":{"lines":[50,51]},"content":"M = Messbar: das Ziel muss objektiv (z.b. Als Zahlen) darstellbar sein","children":[]},{"type":"heading","depth":3,"payload":{"lines":[51,52]},"content":"A = Attraktiv: das Ziel sollte das Projektteam motivieren","children":[]},{"type":"heading","depth":3,"payload":{"lines":[52,53]},"content":"R = Realistisch: das Ziel muss tatsächlich erreichbar sein","children":[]},{"type":"heading","depth":3,"payload":{"lines":[53,54]},"content":"T = Terminiert: das Ziel muss ein klare Terminvergabe haben","children":[]}]},{"type":"heading","depth":2,"payload":{"lines":[55,56]},"content":"Warum sind Ziele im Projektmanagement so wichtig?","children":[{"type":"heading","depth":3,"payload":{"lines":[56,57]},"content":"Anhand der Ziele werden die erforderlichen Maßnahmen Festgelegt (Orientierungsfunktion)","children":[]},{"type":"heading","depth":3,"payload":{"lines":[57,58]},"content":"Auftraggeber und Auftragnehmer erhalten ein detaillierteren Einblick in die zu erwartende Ergebnisse (Präzisierungsfunktion)","children":[]},{"type":"heading","depth":3,"payload":{"lines":[58,59]},"content":"Teilziele wirken motivierend auf die Projekt mitarbeiter (Motivationsfunktion)","children":[]},{"type":"heading","depth":3,"payload":{"lines":[59,60]},"content":"Anhand konkreter Ziele kann der Projekt Erfolg gemessen Werden (Kontrollfunktion)","children":[]}]}]}]},{})</script>
+</body>
+</html>
