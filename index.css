@@ -6,15 +6,15 @@
     --pink: #EC4899;
     --purple: #8B5CF6;
     --light: #EEE;
-  }
-  
-  * {
+}
+
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: "Fira sans", sans-serif;
-  }
-  
-  body {
+}
+
+body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -24,35 +24,53 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-  }
-  
-  h1 {
+}
+
+h1 {
     font-size: 2.5rem;
     font-weight: 300;
     color: var(--light);
-    margin-bottom: 1rem;
-  }
-  
-  ul {
+}
+
+ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
-  }
-  
-  li {
+}
+
+li {
     margin: 10px 0;
-  }
-  
-  a {
+    text-align: left;
+    width: 40%;
+    margin-left: 40%;
+    margin-top: 9px
+}
+
+a {
     text-decoration: none;
     color: var(--grey);
     font-weight: bold;
     transition: color 0.3s ease-in-out;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     color: var(--pink);
-  }
-  
-  /* Rest des CSS bleibt unverändert */
-  
+}
+
+header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+hr {
+  display: inline-block;
+  width: 13rem;
+  border-top: 5px dotted var(--grey);
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  align-content: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
