@@ -7,22 +7,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Schulstoff Zusammenfassung</title>
     </head>
+    <script>
+        function link(link){
+            var iframe = document.getElementById('iframe');
+            iframe.src = link;
+        }
+    </script>
     <body>
-    
-        <header class="Title">
-            <h1 class="hr">Übersicht</h1>
-            <hr />
-        </header>
+        <div class="context">
+            <header class="Title">
+                <h1 class="hr">Übersicht</h1>
+                <hr />
+            </header>
 
-        <div class="markmap-content">
-            <ul>
-                <li><a href="IP-Protokolle/IP-Protokolle.html">IP-Protokolle</a></li>
-                <li><a href="Vollmacht/Vollmacht.html">Vollmacht</a></li>
-                <li><a href="Firma/Relevante-Zahlen.html">Relevante Zahlen von Firmen</a></li>
-                <li><a href="Wirtschaft/Wirtschaft.html">Wirtschaftssektoren und Konjuktion</a></li>
-                <li><a href="Projektmanagement/Projektmanagement.html">Projektmanagement</a></li>
-            </ul>
+            <div class="markmap-content">
+                <ul>
+                    <li onclick="link('IP-Protokolle/IP-Protokolle.html')">IP-Protokolle</button></li>
+                    <li onclick="link('Vollmacht/Vollmacht.html')">Vollmacht</button></li>
+                    <li onclick="link('Firma/Relevante-Zahlen.html')">Relevante Zahlen von Firmen</li>
+                    <li onclick="link('Wirtschaft/Wirtschaft.html')">Wirtschaftssektoren und Konjuktion</a></li>
+                    <li onclick="link('Projektmanagement/Projektmanagement.html')">Projektmanagement</a></li>
+                </ul>
+            </div>
         </div>
-    
+        <div class="preview">
+            <iframe id="iframe"></iframe>
+        </div>
     </body>
 </html>

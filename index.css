@@ -15,7 +15,6 @@
 }
 
 body {
-    display: flex;
     flex-direction: column;
     min-height: 100vh;
     color: var(--light);
@@ -74,3 +73,19 @@ hr {
   margin-bottom: 1rem;
 }
 
+.context{
+    width: 30%;
+    float: left;
+    height: 100%;
+}
+
+.preview {
+    width: 70%;
+    float: left;
+    overflow: hidden;
+    height: 100%;
+}
+
+#iframe {
+    border: none;
+}
