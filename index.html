@@ -14,24 +14,28 @@
         }
     </script>
     <body>
-        <div class="context">
-            <header class="Title">
-                <h1 class="hr">Übersicht</h1>
-                <hr />
-            </header>
-
-            <div class="markmap-content">
-                <ul>
-                    <li onclick="link('IP-Protokolle/IP-Protokolle.html')">IP-Protokolle</button></li>
-                    <li onclick="link('Vollmacht/Vollmacht.html')">Vollmacht</button></li>
-                    <li onclick="link('Firma/Relevante-Zahlen.html')">Relevante Zahlen von Firmen</li>
-                    <li onclick="link('Wirtschaft/Wirtschaft.html')">Wirtschaftssektoren und Konjuktion</a></li>
-                    <li onclick="link('Projektmanagement/Projektmanagement.html')">Projektmanagement</a></li>
-                </ul>
+        <header class="Title">
+            <h1>Übersicht</h1>
+                <div class="underscore">
+                    <hr class="hrbuttom"/>
+                    <hr class="hrtop" />
+                </div>
+        </header>
+        <div class="markmap">
+            <div class="context">
+                <div class="markmap-data">
+                    <ul>
+                        <li onclick="link('IP-Protokolle/IP-Protokolle.html')">IP-Protokolle</button></li>
+                        <li onclick="link('Vollmacht/Vollmacht.html')">Vollmacht</button></li>
+                        <li onclick="link('Firma/Relevante-Zahlen.html')">Relevante Zahlen von Firmen</li>
+                        <li onclick="link('Wirtschaft/Wirtschaft.html')">Wirtschaftssektoren und Konjuktion</a></li>
+                        <li onclick="link('Projektmanagement/Projektmanagement.html')">Projektmanagement</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="preview">
-            <iframe id="iframe"></iframe>
+            <div class="preview">
+                <iframe id="iframe"></iframe>
+            </div>
         </div>
     </body>
 </html>

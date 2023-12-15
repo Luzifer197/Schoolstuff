@@ -20,21 +20,29 @@ html {
 }
 
 body {
+    display: flex;
     flex-direction: column;
+    background-image: -webkit-image-set('https://th.bing.com/th/id/R.764d4aa4a8ad54b3aae2dc01373d127c?rik=3ojTJ6NxKz1hmA&pid=ImgRaw&r=0');
+    background-size: cover;
     min-height: 100vh;
-    color: var(--darkness);
-    background-color: var(--darkest);
     padding: 2rem 1rem;
-    max-width: 800px;
+    max-width: 100%;
     width: 100%;
     height: 100%    ;
     margin: 0 auto;
 }
+div {
+    height: 100%;
+    width: 100%;
+}
 
 h1 {
+    text-align: center;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: 1px;
     font-size: 2.5rem;
     font-weight: 300;
-    color: var(--light);
+    color: rgb(215, 213, 213);
 }
 
 ul {
@@ -44,6 +52,9 @@ ul {
 }
 
 li {
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.5px;
+    color: rgb(215, 213, 213);
     margin: 10px 0;
     text-align: left;
     width: 40%;
@@ -57,29 +68,41 @@ a {
     transition: color 0.3s ease-in-out;
 }
 
-a:hover {
-    color: var(--pink);
-}
-
 header {
-  text-align: center;
-  margin-bottom: 15px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 hr {
-  display: inline-block;
-  width: 13rem;
-  border-top: 5px dotted var(--grey);
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  align-content: center;
-  margin-top: 0.5rem;
-  margin-bottom: 1rem;
+    display: inline-block;
+    width: 13rem;
+    align-content: center;
+    margin-top: 0.5rem;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+}
+
+hr.hrbuttom {
+    padding-right: 1rem;
+    position: absolute;
+    border-top: 5.3px dotted rgb(0, 0, 0);
+    z-index: 2;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+.hrtop {
+    position: absolute;
+    border-top: 5px dotted rgb(215, 213, 213);
+    z-index: 2;
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
 }
 
 .context{
-    width: 30%;
+    width: 198px;
     float: left;
     height: 100%;
 }
@@ -97,6 +120,10 @@ hr {
     height: 100%;
 }
 
-.markmap-content {
+.markmap-data {
     align-self: center;
+}
+
+div.underscore {
+    padding-right: 156px;
 }
