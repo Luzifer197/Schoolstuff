@@ -1,41 +1,71 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <link rel="icon" href="favorite.ico" />
-        <link rel="stylesheet" href="index.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Schulstoff Zusammenfassung</title>
-    </head>
-    <script>
-        function link(link){
-            var iframe = document.getElementById('iframe');
-            iframe.src = link;
+<head>
+    <link rel="icon" href="favorite.ico" />
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schulstoff Zusammenfassung</title>
+</head>
+<script>
+    function navigateTo(link) {
+        var iframe = document.getElementById('iframe');
+        iframe.src = link;
+    }
+
+    function handleMobileView() {
+        let details = navigator.userAgent;
+        let regexp = /android|iphone|kindle|ipad/i;
+        let isMobileDevice = regexp.test(details);
+
+        var desktopElements = document.getElementsByClassName("markmap-data-Desktop")[0];
+        var mobileElements = document.getElementsByClassName("markmap-data-Mobile")[0];
+        var previewElement = document.getElementsByClassName("preview")[0];
+
+        if (isMobileDevice) {
+            desktopElements.style.display = 'none';
+            previewElement.style.display = 'none';
+            mobileElements.style.display = 'block';
+        } else {
+            desktopElements.style.display = 'block';
+            previewElement.style.display = 'block';
+            mobileElements.style.display = 'none';
         }
-    </script>
-    <body>
-        <header class="Title">
-            <h1>Übersicht</h1>
-                <div class="underscore">
-                    <hr class="hrbuttom"/>
-                    <hr class="hrtop" />
-                </div>
-        </header>
-        <div class="markmap">
-            <div class="context">
-                <div class="markmap-data">
-                    <ul>
-                        <li onclick="link('IP-Protokolle/IP-Protokolle.html')">IP-Protokolle</button></li>
-                        <li onclick="link('Vollmacht/Vollmacht.html')">Vollmacht</button></li>
-                        <li onclick="link('Firma/Relevante-Zahlen.html')">Relevante Zahlen von Firmen</li>
-                        <li onclick="link('Wirtschaft/Wirtschaft.html')">Wirtschaftssektoren und Konjuktion</a></li>
-                        <li onclick="link('Projektmanagement/Projektmanagement.html')">Projektmanagement</a></li>
-                    </ul>
-                </div>
+    }
+
+    window.onload = handleMobileView;
+</script>
+<body>
+    <header class="Title">
+        <h1>Übersicht</h1>
+        <div class="underscore">
+            <hr class="underline"/>
+        </div>
+    </header>
+    <div class="markmap">
+        <div class="context">
+            <div class="markmap-data-Desktop">
+                <ul>
+                    <li onclick="navigateTo('IP-Protokolle/IP-Protokolle.html')">IP-Protokolle</li>
+                    <li onclick="navigateTo('Vollmacht/Vollmacht.html')">Vollmacht</li>
+                    <li onclick="navigateTo('Firma/Relevante-Zahlen.html')">Relevante Zahlen von Firmen</li>
+                    <li onclick="navigateTo('Wirtschaft/Wirtschaft.html')">Wirtschaftssektoren und Konjunktion</li>
+                    <li onclick="navigateTo('Projektmanagement/Projektmanagement.html')">Projektmanagement</li>
+                </ul>
             </div>
-            <div class="preview">
-                <iframe id="iframe"></iframe>
+            <div class="markmap-data-Mobile">
+                <ul>
+                    <li> <a href='IP-Protokolle/IP-Protokolle.html'>IP-Protokolle</a></li>
+                    <li> <a href='Vollmacht/Vollmacht.html'>Vollmacht</a></li>
+                    <li> <a href='Firma/Relevante-Zahlen.html'>Relevante Zahlen von Firmen</a></li>
+                    <li> <a href='Wirtschaft/Wirtschaft.html'>Wirtschaftssektoren und Konjunktion</a></li>
+                    <li> <a href='Projektmanagement/Projektmanagement.html'>Projektmanagement</a></li>
+                </ul>
             </div>
         </div>
-    </body>
+        <div class="preview">
+            <iframe id="iframe"></iframe>
+        </div>
+    </div>
+</body>
 </html>

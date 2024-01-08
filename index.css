@@ -22,7 +22,7 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    background-image: -webkit-image-set('https://th.bing.com/th/id/R.764d4aa4a8ad54b3aae2dc01373d127c?rik=3ojTJ6NxKz1hmA&pid=ImgRaw&r=0');
+    background-image: -webkit-image-set('https://thumbs.dreamstime.com/b/bereiten-sie-zerknitterte-beschaffenheit-des-braunen-papiers-alte-papieroberfl%C3%A4che-f%C3%BCr-hintergrund-auf-108204796.jpg');
     background-size: cover;
     min-height: 100vh;
     padding: 2rem 1rem;
@@ -38,11 +38,9 @@ div {
 
 h1 {
     text-align: center;
-    -webkit-text-stroke-color: #000000;
-    -webkit-text-stroke-width: 1px;
     font-size: 2.5rem;
     font-weight: 300;
-    color: rgb(215, 213, 213);
+    color: rgb(0, 0, 0);
 }
 
 ul {
@@ -51,10 +49,8 @@ ul {
     text-align: center;
 }
 
-li {
-    -webkit-text-stroke-color: black;
-    -webkit-text-stroke-width: 0.5px;
-    color: rgb(215, 213, 213);
+li, a {
+    color: rgb(0, 0, 0);
     margin: 10px 0;
     text-align: left;
     width: 40%;
@@ -82,19 +78,10 @@ hr {
     margin-bottom: 1rem;
 }
 
-hr.hrbuttom {
-    padding-right: 1rem;
+.underline {
+    padding-left: 5px;
     position: absolute;
-    border-top: 5.3px dotted rgb(0, 0, 0);
-    z-index: 2;
-    border-bottom: 0px;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-.hrtop {
-    position: absolute;
-    border-top: 5px dotted rgb(215, 213, 213);
+    border-top: 5px dotted rgb(0, 0, 0);
     z-index: 2;
     border-bottom: 0px;
     border-left: 0px;
@@ -125,5 +112,5 @@ hr.hrbuttom {
 }
 
 div.underscore {
-    padding-right: 156px;
+    padding-right: 200px;
 }
