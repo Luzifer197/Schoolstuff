@@ -3,8 +3,10 @@
 <head>
     <link rel="icon" href="favorite.ico" />
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="nofollow" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Schulstoff Zusammenfassung</title>
 </head>
 <script>
@@ -13,27 +15,27 @@
         iframe.src = link;
     }
 
-    function handleMobileView() {
-        let details = navigator.userAgent;
-        let regexp = /android|iphone|kindle|ipad/i;
-        let isMobileDevice = regexp.test(details);
-
-        var desktopElements = document.getElementsByClassName("markmap-data-Desktop")[0];
-        var mobileElements = document.getElementsByClassName("markmap-data-Mobile")[0];
-        var previewElement = document.getElementsByClassName("preview")[0];
-
-        if (isMobileDevice) {
-            desktopElements.style.display = 'none';
-            previewElement.style.display = 'none';
-            mobileElements.style.display = 'block';
-        } else {
-            desktopElements.style.display = 'block';
-            previewElement.style.display = 'block';
-            mobileElements.style.display = 'none';
-        }
-    }
-
-    window.onload = handleMobileView;
+//    function handleMobileView() {
+//        let details = navigator.userAgent;
+//        let regexp = /android|iphone|kindle|ipad/i;
+//        let isMobileDevice = regexp.test(details);
+//
+//        var desktopElements = document.getElementsByClassName("markmap-data-Desktop")[0];
+//        var mobileElements = document.getElementsByClassName("markmap-data-Mobile")[0];
+//        var previewElement = document.getElementsByClassName("preview")[0];
+//
+//        if (isMobileDevice) {
+//            desktopElements.style.display = 'none';
+//            previewElement.style.display = 'none';
+//            mobileElements.style.display = 'block';
+//        } else {
+//            desktopElements.style.display = 'block';
+//            previewElement.style.display = 'block';
+//            mobileElements.style.display = 'none';
+//        }
+//    }
+//
+//    window.onload = handleMobileView;
 </script>
 <body>
     <header class="Title">
@@ -45,26 +47,17 @@
     <div class="markmap">
         <div class="context">
             <div class="markmap-data-Desktop">
-                <ul>
-                    <li onclick="navigateTo('IP-Protokolle/IPv4-Protokolle.html')">IPv4-Protokolle</li>
-                    <li onclick="navigateTo('IP-Protokolle/IPv6-Protokolle.html')">IPv6-Protokolle</li>
-                    <li onclick="navigateTo('Vollmacht/Vollmacht.html')">Vollmacht</li>
-                    <li onclick="navigateTo('Firma/Relevante-Zahlen.html')">Relevante Zahlen von Firmen</li>
-                    <li onclick="navigateTo('Wirtschaft/Wirtschaft.html')">Wirtschaftssektoren und Konjunktion</li>
-                    <li onclick="navigateTo('Projektmanagement/Projektmanagement.html')">Projektmanagement</li>
-                </ul>
+                <nav class="navbar fixed-left">
+                    <ul>
+                        <li onclick="navigateTo('IP-Protokolle/IPv4-Protokolle.html')">IPv4-Protokolle</li>
+                        <li onclick="navigateTo('IP-Protokolle/IPv6-Protokolle.html')">IPv6-Protokolle</li>
+                        <li onclick="navigateTo('Vollmacht/Vollmacht.html')">Vollmacht</li>
+                        <li onclick="navigateTo('Firma/Relevante-Zahlen.html')">Relevante Zahlen von Firmen</li>
+                        <li onclick="navigateTo('Wirtschaft/Wirtschaft.html')">Wirtschaftssektoren und Konjunktion</li>
+                        <li onclick="navigateTo('Projektmanagement/Projektmanagement.html')">Projektmanagement</li>
+                    </ul>
+                </nav>
             </div>
-            <div class="markmap-data-Mobile">
-                <ul>
-                    <li> <a href='IP-Protokolle/IPv4-Protokolle.html'>IPv4-Protokolle</a></li>
-                    <li> <a href='IP-Protokolle/IPv6-Protokolle.html'>IPv6-Protokolle</a></li>
-                    <li> <a href='Vollmacht/Vollmacht.html'>Vollmacht</a></li>
-                    <li> <a href='Firma/Relevante-Zahlen.html'>Relevante Zahlen von Firmen</a></li>
-                    <li> <a href='Wirtschaft/Wirtschaft.html'>Wirtschaftssektoren und Konjunktion</a></li>
-                    <li> <a href='Projektmanagement/Projektmanagement.html'>Projektmanagement</a></li>
-                </ul>
-            </div>
-        </div>
         <div class="preview">
             <iframe id="iframe"></iframe>
         </div>
